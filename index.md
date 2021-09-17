@@ -1,10 +1,8 @@
 ## BangboLiang
 
-[Hunan  University](http://www.hnu.edu.cn/)
-
 My name is BangboLiang(梁帮博) 
 
-A student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/)
+A student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/) of [Hunan  University](http://www.hnu.edu.cn/)
 
 ## Address:
 Hunan University, Yuelu District,
