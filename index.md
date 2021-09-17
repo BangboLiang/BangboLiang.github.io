@@ -6,12 +6,17 @@ A student in [College of Computer Science and Electronic Engineering](http://cse
 
 ## Address:
 Hunan University, Yuelu District,
+
 Changsha, Hunan, China,
+
 410082
 
 Personal Twitter: @IamRealBobLiang
+
 Official E-Mail: lbb@hnu.edu.cn (Not always online)
+
 Personal E-Mail: 529894911@qq.com (Always avaliable)
+
 
 ## Self-Introduction
 ***
