@@ -13,12 +13,11 @@ Changsha, Hunan, China,
 
 &nbsp;
 
-Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang)
-
 Official E-Mail: lbb@hnu.edu.cn (Not always online)
 
 Personal E-Mail: 529894911@qq.com (Always avaliable)
 
+Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang)
 
 ## Self-Introduction
 ***
