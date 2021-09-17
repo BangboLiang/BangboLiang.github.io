@@ -1,23 +1,23 @@
 ## BangboLiang
 
-My name is BangboLiang(梁帮博) 
+My name is BangboLiang(梁帮博).
 
-A student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/) of [Hunan  University](http://www.hnu.edu.cn/)
+A student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/) of [Hunan  University](http://www.hnu.edu.cn/).
 
 ## Address:
 Hunan University, Yuelu District,
 
 Changsha, Hunan, China,
 
-410082
+410082.
 
 &nbsp;
 
-Official E-Mail: lbb@hnu.edu.cn (Not always online)
+Official E-Mail: lbb@hnu.edu.cn (Not always online).
 
-Personal E-Mail: 529894911@qq.com (Always avaliable)
+Personal E-Mail: 529894911@qq.com (Always avaliable).
 
-Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang)
+Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
 
 ## Self-Introduction
 ***
