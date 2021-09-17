@@ -1,6 +1,8 @@
-## BangboLiang(梁帮博)
+## BangboLiang
 
 [Hunan  University](http://www.hnu.edu.cn/)
+
+My name is BangboLiang(梁帮博) 
 
 A student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/)
 
@@ -21,4 +23,5 @@ Personal E-Mail: 529894911@qq.com (Always avaliable)
 ## Self-Introduction
 ***
 I'm a Student in Hunan University in Changsha, China. My major is computer scince and technology. 
+
 This website is used to record the life of studying for a master's degree.
