@@ -1,3 +1,8 @@
+---
+layout: article
+title: The new website appearance!
+---
+
 I moved  my self-introduction from the old website.
 
 See them below.
