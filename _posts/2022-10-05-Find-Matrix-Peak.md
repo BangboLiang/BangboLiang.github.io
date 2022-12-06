@@ -1,6 +1,6 @@
 ---
 layout: article
-title: The new website appearance!
+title: FindMatrixPeak
 ---
 
 # FindMatrixPeak
