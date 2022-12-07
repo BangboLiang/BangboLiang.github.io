@@ -9,7 +9,7 @@ title: Consist Hash using fnv1_32hash
 
 Just check out in any environment that has C++ compiler and run it!
 
-```c++
+```cpp
 #include <iostream>
 #include <string>
 #include <math.h>
@@ -230,3 +230,5 @@ int main(int argc, char const *argv[])
     show_all_real_visit();
     return 0;
 }
+
+```
