@@ -56,3 +56,7 @@ I'm a Student in Hunan University in Changsha, China. My major is computer scinc
 
 This website is used to include, but is not limited to, record the life of studying for a master's degree.
 
+![pic](pic.jpg)
+
+
+
