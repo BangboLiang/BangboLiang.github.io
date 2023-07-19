@@ -2,6 +2,10 @@
 layout: post
 title: Consist Hash using fnv1_32hash
 tags: [Code,Cpp,Hash]
+cover-img: /assets/img/background.png
+thumbnail-img: /assets/img/avatar-icon.png
+share-img: /assets/img/background.png
+comments: true
 ---
 
 # Consist Hash

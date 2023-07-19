@@ -2,6 +2,9 @@
 layout: post
 title: Self Introduction From Old Website~!
 tags: [Introduction]
+cover-img: /assets/img/background.png
+thumbnail-img: /assets/img/avatar-icon.png
+share-img: /assets/img/background.png
 comments: true
 ---
 

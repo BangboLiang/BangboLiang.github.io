@@ -1,6 +1,7 @@
 ---
 layout: article
 title: The new website appearance!
+comments: true
 ---
 
 # New appearance!
