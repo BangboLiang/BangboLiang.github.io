@@ -25,8 +25,10 @@ navbar-links:
   My College: "http://csee.hnu.edu.cn/"
   My Accounts:
     - Twitter: "https://twitter.com/IamRealBobLiang"
+    - Facebook: "https://www.facebook.com/profile.php?id=100083663814660"
     - Instagram: "https://www.instagram.com/thisislbb/"
     - Weibo: "https://weibo.com/u/6385610743"
+    - Zhihu: "https://www.zhihu.com/people/liang-bang-bo"
 
 ################
 # --- Logo --- #
@@ -53,8 +55,8 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "lbb@hnu.edu.cn"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-#  facebook: deanattali
+#  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  facebook: BangboLiang
   github: BangboLiang
   twitter: IamRealBobLiang
 #  patreon: DeanAttali
@@ -193,7 +195,7 @@ footer-hover-col: "#0085A1"
 #disqus: ""
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
-#fb_comment_id: ""
+fb_comment_id: "100083663814660"
 
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
 #commentbox: "" # Project ID, e.g. "5694267682979840-proj"
@@ -246,7 +248,7 @@ footer-hover-col: "#0085A1"
 date_format: "%B %-d, %Y"
 
 # Facebook App ID
-#fb_app_id: ""
+fb_app_id: "100083663814660"
 
 #################################################################################
 # --- You don't need to touch anything below here (but you can if you want) --- #

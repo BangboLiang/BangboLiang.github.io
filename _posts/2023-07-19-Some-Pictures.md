@@ -10,7 +10,7 @@ comments: true
 
 ## Here are some photographs I took before.
 ### Hope you can enjoy them.
-### I used Nikon D7200, my friend. :)
+### I used Nikon D7200, it's my friend :)
 ![pi1](../assets/img/07_19/pic1.jpg)
 ![pi2](../assets/img/07_19/pic2.jpg)
 ![pi3](../assets/img/07_19/pic3.jpg)
@@ -21,3 +21,4 @@ comments: true
 ![pi8](../assets/img/07_19/pic8.jpg)
 
 ### I think the **resolution** of the photos are low, you can check them in my [Instagram](https://www.instagram.com/thisislbb/).
+### Also, you can find me in [Twitter]().

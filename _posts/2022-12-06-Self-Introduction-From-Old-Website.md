@@ -31,7 +31,7 @@ Changsha, Hunan, China,
 
 Official E-Mail: lbb@hnu.edu.cn (Not always online).
 
-Personal E-Mail: 529894911@qq.com (Always avaliable).
+Personal E-Mail: bangboliang@outlook.com (Always avaliable).
 
 Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
 
@@ -39,5 +39,5 @@ Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
 ***
 I'm a Student in Hunan University in Changsha, China. My major is computer scince and technology. 
 
-This website is used to include, but is not limited to, record the life of studying for a master's degree.
+This website is used to include, but is not limited to, record the life of studying for a degree.
 

@@ -21,7 +21,7 @@ Changsha, Hunan, China,
 
 Official E-Mail: lbb@hnu.edu.cn (Not always online).
 
-Personal E-Mail: 529894911@qq.com (Always avaliable).
+Personal E-Mail: bangboliang@outlook.com (Always avaliable).
 
 Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
 
