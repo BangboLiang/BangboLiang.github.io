@@ -3,7 +3,7 @@ layout: post
 title: Consist Hash using fnv1_32hash
 tags: [Code,Cpp,Hash]
 cover-img: /assets/img/background.png
-share-img: /assets/img/background.png
+thumbnail-img: ""
 comments: true
 ---
 
