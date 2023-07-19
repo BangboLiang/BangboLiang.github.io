@@ -1,6 +1,7 @@
 ---
-layout: article
+layout: post
 title: Consist Hash using fnv1_32hash
+tags: [Code,Cpp,Hash]
 ---
 
 # Consist Hash

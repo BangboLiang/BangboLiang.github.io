@@ -1,225 +1,296 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-#
-# ,--------.      ,--.   ,--. ,--.
-# '--.  .--',---.  \  `.'  /,-'  '-.
-#    |  |  | .-. :  .'    \ '-.  .-'
-#    |  |  \   --. /  .'.  \  |  |
-#    `--'   `----''--'   '--' `--'
+###########################################################
+### Welcome to Beautiful Jekyll!
+### This config file is meant for settings that affect your entire website. When you first
+### set up your website you should go through all these settings and edit them, but after
+### the initial set up you won't need to come back to this file often.
+###########################################################
+
+############################
+# --- Required options --- #
+############################
+
+# Name of website
+title: Bangboliang's Website
+
+# Your name to show in the footer
+author: Bangboliang
+
+###############################################
+# --- List of links in the navigation bar --- #
+###############################################
+
+navbar-links:
+  About Me: "aboutme"
+  My Accounts:
+    - Twitter: "https://twitter.com/IamRealBobLiang"
+    - Instagram: "https://www.instagram.com/thisislbb/"
+  Author's home: "bangboliang@github.io"
+
+################
+# --- Logo --- #
+################
+
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+avatar: "/assets/img/my_avatar.png"
+
+# By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+round-avatar: true
+
+# If you want to have an image logo in the top-left corner instead of having the title of the website,
+# then specify the following parameter
+#title-img: /path/to/image
 
 
+#####################################
+# --- Footer social media links --- #
+#####################################
 
+# Select the social network links that you want to show in the footer.
+# You can change the order that they show up on the page by changing the order here.
+# Uncomment the links you want to show and add your information to each one.
+social-network-links:
+  email: "lbb@hnu.edu.cn"
+  rss: true  # remove this line if you don't want to show an RSS link at the bottom
+#  facebook: deanattali
+  github: BangboLiang
+  twitter: IamRealBobLiang
+#  patreon: DeanAttali
+#  youtube: c/daattali
+#  medium: yourname
+#  reddit: yourname
+#  linkedin: daattali
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+  instagram: thisislbb
+#  spotify: yourname
+  telephone: +8615332705588
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+#  telegram: yourname
+#  calendly: yourname
+#  mastodon: instance.url/@username
+#  ORCID: your ORCID ID
+#  google-scholar: your google scholar
+#  discord: "invite_code" or "users/userid" or "invite/invite_code" 
+#  kaggle: yourname
+#  hackerrank: yourname
+#  gitlab: yourname
 
-## => Site Settings
-##############################
-text_skin: chocolate # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: tomorrow-night-bright # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : # the base hostname & protocol for your site e.g. https://www.someone.com
-baseurl : # does not include hostname
-title   : Bangbo liang's website
-description: > # this means to ignore newlines until "Language & timezone"
-  This website is used to include, but is not limited to, record the life of studying for a master’s degree.
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+rss-description: This website is a virtual proof that I'm awesome
 
+###########################
+# --- General options --- #
+###########################
 
-## => Language and Timezone
-##############################
-lang: # the language of your site, default as "en"
-timezone: Asia/Shanghai # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones for the available values
+# Select which social network share links to show in posts
+share-links-active:
+  twitter: true
+  facebook: false
+  linkedin: false
+  vk: false
 
+# How to display the link to your website in the footer
+# Remove this if you don't want a link in the footer
+#url-pretty: "MyWebsite.com"
 
-## => Author and Social
-##############################
-author:
-  type      : person # "person" (default), "organization"
-  name      : Bangbo Liang
-  url       :
-  avatar    : # path or url of avatar image (square)
-  bio       : I'm a Student in Hunan University in Changsha, China. My major is computer scince and technology.
-  email     : lbb@hnu.edu.cn
-  facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
-  twitter   : IamRealBobLiang # "user_name" the last part of your profile url, e.g. https://twitter.com/user_name
-  weibo     : 6385610743 # "user_id"   the last part of your profile url, e.g. https://www.weibo.com/user_id/profile?...
-  googleplus: # "user_id"   the last part of your profile url, e.g. https://plus.google.com/u/0/user_id
-  telegram  : # "user_name" the last part of your profile url, e.g. https://t.me/user_name
-  medium    : # "user_name" the last part of your profile url, e.g. https://medium.com/user_name
-  zhihu     : liang-bang-bo # "user_name" the last part of your profile url, e.g. https://www.zhihu.com/people/user_name
-  douban    : # "user_name" the last part of your profile url, e.g. https://www.douban.com/people/user_name
-  linkedin  : # "user_name" the last part of your profile url, e.g. https://www.linkedin.com/in/user_name
-  github    : BangboLiang # "user_name" the last part of your profile url, e.g. https://github.com/user_name
-  npm       : # "user_name" the last part of your profile url, e.g. https://www.npmjs.com/~user_name
+# Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+excerpt_length: 50
 
+# Whether or not to show an excerpt for every blog post in the feed page
+feed_show_excerpt: true
 
-## => GitHub Repository (if the site is hosted by GitHub)
-##############################
-repository: user_name/repo_name
-repository_tree: master
+# Whether or not to show a list of tags below each post preview in the feed page
+feed_show_tags: true
 
+# Add a search button to the navbar
+post_search: true
 
-## => Paths
-##############################
-paths:
-  root    : # title link url, "/" (default)
-  home    : # home layout url, "/" (default)
-  archive : # "/archive.html" (default)
-  rss     : # "/feed.xml" (default)
+# Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+edit_page_button: true
 
+# Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
+# If this setting is off, then long sub-menu words might get cut off
+# See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+navbar-var-length: false
 
-## => Post
-##############################
-## excerpt
-excerpt_separator: <!--more-->
+# The keywords to associate with your website, for SEO purposes
+#keywords: "my,list,of,keywords"
 
-## license
-license: CC-BY-NC-4.0 # "CC-BY-4.0", "CC-BY-SA-4.0", "CC-BY-NC-4.0", "CC-BY-ND-4.0"
+######################################
+# --- Colours / background image --- #
+######################################
 
-## TOC
-toc:
-  selectors: # "h1,h2,h3" (default)
+# Personalize the colours in your website. Colour values can be any valid CSS colour
 
+navbar-col: "#00CED1"
+navbar-text-col: "#404040"
+navbar-border-col: "#00CEDA"
+page-col: "#FFFFFF"
+text-col: "#404040"
+link-col: "#008AFF"
+hover-col: "#0085A1"
+footer-col: "#EAEAEA"
+footer-text-col: "#777777"
+footer-link-col: "#404040"
+footer-hover-col: "#0085A1"
 
-## => Markdown Enhancements
-##############################
-## Mathjax
-mathjax: # false (default), true
-mathjax_autoNumber: # false (default), true
+# Alternatively, the navbar, footer, and page background can be set to an image
+# instead of colour
 
-## Mermaid
-mermaid: # false (default), true
+#navbar-img: "/assets/img/bgimage.png"
+#footer-img: "/assets/img/bgimage.png"
+#page-img: "/assets/img/bgimage.png"
 
-## Chart
-chart: # false (default), true
+# Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+#mobile-theme-col: "#0085A1"
 
+# For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+#site-css:
+#  - "/assets/css/custom-styles.css"
 
-## => Paginate
-##############################
-paginate: 8
-paginate_path: /page:num # don't change this unless for special need
+# If you have common JavaScript files that should be included in every page, list them here
+#site-js:
+#  - "/assets/js/custom-script.js"
 
+#################################
+# --- Web Analytics Section --- #
+#################################
 
-## => Sources
-##############################
-sources: # bootcdn (default), unpkg
+# Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
+#gtag: "G-XXXXXXXXXX"
 
+# Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
+#cloudflare_analytics: ""
 
-## => Sharing
-##############################
-sharing:
-  provider: false # false (default), "addtoany", "addthis", "custom"
+# Google Tag Manager ID
+#gtm: ""
 
-  ## AddThis
-  addthis:
-    id: # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+# Matomo (aka Piwik) Web statistics
+# Uncomment the following section to enable Matomo. The opt-out parameter controls
+# whether or not you want to allow users to opt out of tracking.
+#matomo:
+#  site_id: "9"
+#  uri: "demo.wiki.pro"
+#  opt-out: true
 
+# Google Universal Analytics ID -- deprecated
+# As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
+# you should switch to using the `gtag` field above instead.
+#google_analytics: "UA-XXXXXXXX-X"
 
-## => Comments
-##############################
-comments:
-  provider: false # false (default), "disqus", "gitalk", "valine", "custom"
+####################
+# --- Comments --- #
+####################
 
-  ## Disqus
-  disqus:
-    shortname: # the Disqus shortname for the site
+# To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
+#disqus: ""
 
-  ## Gitalk
-  # please refer to https://github.com/gitalk/gitalk for more info.
-  gitalk:
-    clientID    : # GitHub Application Client ID
-    clientSecret: # GitHub Application Client Secret
-    repository  : # GitHub repo
-    owner       : # GitHub repo owner
-    admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
-      # - your GitHub Id
+# To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
+#fb_comment_id: ""
 
-  ## Valine
-  # please refer to https://valine.js.org/en/ for more info.
-  valine:
-    app_id      : # LeanCloud App id
-    app_key     : # LeanCloud App key
-    placeholder : # Prompt information
-    visitor     : # false (default)
-    meta        : # "[nick, mail, link]" (default) nickname, E-mail, Personal-site
+# To use CommentBox, sign up for a Project ID on https://commentbox.io
+#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
+# To use Utterances comments: (0) uncomment the following section, (1) fill in
+# "repository" (make sure the repository is public), (2) Enable Issues in your repository,
+# (3) Install the Utterances app in your repository https://github.com/apps/utterances
+# See more details about the parameters below at https://utteranc.es/
+#utterances:
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  issue-term: title   # Mapping between blog posts and GitHub issues
+#  theme: github-light # Utterances theme
+#  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
-## => Pageview
-##############################
-pageview:
-  provider: false # false (default), "leancloud", "custom"
+# To use Staticman comments, uncomment the following section. You may leave the reCaptcha
+# section commented if you aren't using reCaptcha for spam protection. 
+# Using Staticman requires advanced knowledge, please consult 
+# https://github.com/eduardoboucas/staticman/ and https://staticman.net/ for further 
+# instructions. For any support with staticman please direct questions to staticman and 
+# not to BeautifulJekyll.
+#staticman:
+#  repository : # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  branch     : master # If you're not using `master` branch, then you also need to update the `branch` parameter in `staticman.yml`
+#  endpoint   : # URL of your deployment, with a trailing slash eg. "https://<your-api>/v3/entry/github/"
+#  reCaptcha:   # (optional, set these parameters in `staticman.yml` as well) 
+#    siteKey  : # You need to apply for a site key on Google
+#    secret   : # Encrypt your password by going to https://<your-own-api>/v3/encrypt/<your-site-secret>
 
-  ## Leancloud
-  leancloud:
-    app_id    : # LeanCloud App id
-    app_key   : # LeanCloud App key
-    app_class : # LeanCloud App class
+# To use giscus comments:
+# (0) Uncomment the following giscus section, (1) Enable Discussions in your GitHub repository, 
+# (2) Install the giscus app in your repository (details at https://giscus.app),
+# (3) Fill in *all* the parameters below 
+# See more details about giscus and each of the following parameters at https://giscus.app
+#giscus:
+#  hostname: giscus.app # Replace with your giscus instance's hostname if self-hosting
+#  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
+#  repository-id: # ID of your repository, retrieve this info from https://giscus.app
+#  category: Announcements # Category name of your GitHub Discussion posts
+#  category-id: # ID of your category, retrieve this info from https://giscus.app
+#  mapping: pathname
+#  reactions-enabled: 1
+#  emit-metadata: 0
+#  theme: light
 
+################
+# --- Misc --- #
+################
 
-## => Search
-##############################
-search:
-  provider: default # "default" (default), false, "google", "custom"
+# Ruby Date Format to show dates of posts
+date_format: "%B %-d, %Y"
 
-  ## Google Custom Search Engine
-  google:
-    custom_search_engine_id: # Google Custom Search Engine ID
+# Facebook App ID
+#fb_app_id: ""
 
+#################################################################################
+# --- You don't need to touch anything below here (but you can if you want) --- #
+#################################################################################
 
-## => Analytics
-##############################
-analytics:
-  provider: false # false (default), "google", "custom"
+# Output options (more information on Jekyll's site)
+timezone: "Asia/Shanghai"
+markdown: kramdown
+highlighter: rouge
+permalink: /:year-:month-:day-:title/
+paginate: 5
 
-  ## Google Analytics
-  google:
-    tracking_id : # Google Analytics id for the site
-    anonymize_ip: false # Anonymize IP tracking for Analytics
+kramdown:
+  input: GFM
 
+# Default YAML values (more information on Jekyll's site)
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+      social-share: true # add social media sharing buttons to all blog posts
+  -
+    scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
 
-## => Build
-##############################
-markdown    : kramdown
-highlighter : rouge
-permalink   : date
-
+# Exclude these files from production site
 exclude:
   - CHANGELOG.md
-  - HOW_TO_RELEASE.md
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - LICENSE
-  - README-*.md
   - README.md
-  - gulpfile.js
-  - jekyll-text-theme.gemspec
-  - package-lock.json
-  - package.json
-  - /docs
-  - /node_modules
-  - /screenshots
-  - /test
-  - /vendor
+  - screenshot.png
+  - docs/
 
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: article
-      sharing: true
-      license: true
-      aside:
-        toc: true
-      show_edit_on_github: true
-      show_subscribe: true
-      pageview: true
-
-
-## => Plugins
-##############################
 plugins:
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
-  - jemoji
+
+# Beautiful Jekyll / Dean Attali
+# 2fc73a3a967e97599c9763d05e564189
+

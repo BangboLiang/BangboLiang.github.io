@@ -1,6 +1,8 @@
 ---
-layout: article
+layout: post
 title: Self Introduction From Old Website~!
+tags: [Introduction]
+comments: true
 ---
 
 I moved  my self-introduction from the old website.
