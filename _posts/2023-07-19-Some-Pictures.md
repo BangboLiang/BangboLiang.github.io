@@ -4,6 +4,7 @@ title: Some Pictures
 subtitle: I'm also a phtograph lover!
 tags: [Life,Photo]
 cover-img: /assets/img/background.png
+thumbnail-img: /assets/img/thumb.png
 comments: true
 ---
 
