@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: post
 title: The new website appearance!
 comments: true
 ---
