@@ -192,7 +192,7 @@ footer-hover-col: "#0085A1"
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: William Liang
+#disqus: William Liang
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 fb_comment_id: 100083663814660
