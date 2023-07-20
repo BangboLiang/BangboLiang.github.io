@@ -16,3 +16,4 @@ I think I have a lot of things to share include but not limited to study outcome
 
 From now on, I use Twitter(best but too many adults content, I don't know how many sh\*t are there in Elon Musk's mind), Instagram(mainly for picture sharing), and Facebook.
 
+>_Life is like a box of chocolates, you never know what you are going to get._
