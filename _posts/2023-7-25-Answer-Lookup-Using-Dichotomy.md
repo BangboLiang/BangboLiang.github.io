@@ -10,7 +10,7 @@ comments: true
 
 # Using dichotomy to find the highest/lowest possible answer is a good way to solve problems.
 
-You can find the example problem here:https://www.luogu.com.cn/problem/P2678
+You can find the example problem here:  https://www.luogu.com.cn/problem/P2678
 
 Here is the problem:
 >The annual "Stone Jumping" competition is about to start again!
