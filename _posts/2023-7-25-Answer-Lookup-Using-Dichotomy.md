@@ -10,7 +10,7 @@ comments: true
 
 # Using dichotomy to find the highest/lowest possible answer is a good way to solve problems.
 
-You can find the example problem here:  https://www.luogu.com.cn/problem/P2678
+You can find the example problem here : [https://www.luogu.com.cn/problem/P2678](https://www.luogu.com.cn/problem/P2678)
 
 Here is the problem:
 >The annual "Stone Jumping" competition is about to start again!
@@ -95,6 +95,73 @@ int main(int argc, char const *argv[]){
         }
     }
     cout << ans << '\n';
+    return 0;
+}
+
+```
+
+# Another Problem
+
+You can find it here : [https://www.luogu.com.cn/problem/P3853](https://www.luogu.com.cn/problem/P3853)
+
+>There is a long expressway between city B and city T. There are road signs in some places on this road, but everyone feels that there are too few road signs, and there is often a considerable distance between two adjacent road signs. In order to facilitate the study of this problem, we define the maximum distance between adjacent road signs on the road as the "openness index" of the road.
+
+>Now the government has decided to add some road signs on the highway to minimize the "emptiness index" of the highway. They ask you to design a program to calculate the minimum value that can be achieved. Please note that the start and end points of the road are guaranteed to have signposts, the length of the road is an integer, and both the original signpost and the new signpost must be an integer number of units away from the starting point.
+
+```cpp
+#include <stdio.h>
+
+using namespace std;
+
+int length, signnum, newsignnum;
+
+int signs[100010];
+
+bool judge(int curr_ans){
+    int i = 0;      //next sign
+    int now = signs[0];    //curr sign distance
+    int curr_newsign = 0;
+    while(i < signnum){
+        i++;
+        if (signs[i] - now > curr_ans){
+            now = now + curr_ans;   // set a new sign and move to it.
+            i--;                    //still compare the same next sign.
+            curr_newsign++;
+            if(curr_newsign > newsignnum)
+                return false;         
+        }
+        else
+            now = signs[i];
+    }
+    if(curr_newsign <= newsignnum)
+        return true;
+    else
+        return false;
+}
+
+int main(int argc, char const *argv[]){
+    scanf("%d %d %d",&length, &signnum, &newsignnum);
+    for (int i = 0; i < signnum; i++){
+        scanf("%d", &signs[i]);
+    }
+
+    int left = 1;
+    int right = length;
+    int mid;
+    int ans;
+    while(left <= right){
+        mid = (left + right) / 2;
+        if (judge(mid)){ // mid is a legal answer
+            //printf("mid is %d and its legal\n", mid);
+            ans = mid;
+            right = mid - 1;    //find a smaller one.
+        }
+        else{                    //impossible to find such a small answer.
+            //printf("mid is %d and its illegal\n", mid);
+            left = mid + 1;     //find legal answer.
+        }     
+    }
+    printf("%d\n", ans);
     return 0;
 }
 
