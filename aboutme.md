@@ -23,7 +23,13 @@ Official E-Mail: lbb@hnu.edu.cn (Not always online).
 
 Personal E-Mail: bangboliang@outlook.com (Always avaliable).
 
-Personal Twitter: [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
+My Twitter(X): [@IamRealBobLiang](https://twitter.com/IamRealBobLiang).
+
+My Facebook: [@Bangbo_Liang](https://www.facebook.com/profile.php?id=100083663814660).
+
+My Github: [@BangboLiang](https://github.com/BangboLiang).
+
+My Weibo: [@蓝爸爸吃萝卜饼](https://weibo.com/u/6385610743).
 
 ## Self-Introduction
 
