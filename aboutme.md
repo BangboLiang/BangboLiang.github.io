@@ -8,7 +8,7 @@ subtitle: This is my personal Website.
 
 My name is BangboLiang(梁帮博).
 
-A pre-PhD student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/) of [Hunan  University](http://www.hnu.edu.cn/).
+A PhD student in [College of Computer Science and Electronic Engineering](http://csee.hnu.edu.cn/) of [Hunan  University](http://www.hnu.edu.cn/).
 ## Address:
 
 Hunan University, Yuelu District,
@@ -35,6 +35,8 @@ My Weibo: [@蓝爸爸吃萝卜饼](https://weibo.com/u/6385610743).
 
 ***
 
-I'm a pre-PhD Student in Hunan University in Changsha, China. My major is computer scince and technology. 
+I'm a PhD Student in Hunan University in Changsha, China. My major is computer scince and technology. 
+
+I'm interested in Computer Networks and Computer Architecture.
 
 This website is used to include, but is not limited to, record the life of studying for a degree.

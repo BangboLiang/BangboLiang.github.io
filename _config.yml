@@ -24,6 +24,7 @@ navbar-links:
   My Supervisor: "https://grzy.hnu.edu.cn/site/index/chenguo"
   My College: "http://csee.hnu.edu.cn/"
   My Accounts:
+    - Github: "https://github.com/BangboLiang"
     - Twitter(X): "https://twitter.com/IamRealBobLiang"
     - Facebook: "https://www.facebook.com/profile.php?id=100083663814660"
     - Instagram: "https://www.instagram.com/thisislbb/"
@@ -192,7 +193,7 @@ footer-hover-col: "#0085A1"
 ####################
 
 # To use Disqus comments, sign up to https://disqus.com and fill in your Disqus shortname (NOT the userid)
-disqus: bangboliang
+# disqus: bangboliang
 
 # To use Facebook Comments, create a Facebook app and fill in the Facebook App ID
 #fb_comment_id: 100083663814660
