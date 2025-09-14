@@ -4,7 +4,7 @@ title: Our new white paper is published!
 subtitle: New publication.
 tags: [Study, Publication]
 cover-img: /assets/img/background.png
-thumbnail-img: /assets/img/math.jpg
+thumbnail-img: /assets/img/whitepaper.jpeg
 comments: true
 ---
 
