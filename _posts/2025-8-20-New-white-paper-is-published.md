@@ -27,8 +27,11 @@ It not only systematically sorts out the development background of optoelectroni
 ### Key Highlights of the White Paper
 
 ✅ Sorts out national policies, AI trends, and new network requirements of ICCs
+
 ✅ Analyzes performance differences and complementarity between optical switching and electronic switching
+
 ✅ Summarizes key challenges and technical paths from the application layer to the physical layer
+
 ✅ Proposes future technological evolution directions and standardization recommendations
 
 We aim for this white paper to provide a systematic reference framework and technical insights for researchers, equipment manufacturers, operators, and service providers in the ICC network field. Together, we can promote the construction of a next-generation ICC network infrastructure featuring ultra-large scale, ultra-large bandwidth, ultra-low latency, and ultra-high reliability.
