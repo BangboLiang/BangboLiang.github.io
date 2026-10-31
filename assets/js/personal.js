@@ -22,7 +22,7 @@
     let count = 0;
     entries.forEach(entry => {
       const tags = entry.dataset.tags.split(' ');
-      const matchesCategory = category === 'all' || (category === 'research' && tags.some(tag => ['code', 'study', 'writing', 'publication'].includes(tag))) || (category === 'life' && tags.some(tag => ['life', 'photo'].includes(tag)));
+      const matchesCategory = category === 'all' || (category === 'research' && tags.some(tag => ['code', 'study', 'writing', 'publication', 'research'].includes(tag))) || (category === 'life' && tags.some(tag => ['life', 'photo'].includes(tag)));
       const visible = matchesCategory && entry.dataset.search.includes(query);
       entry.hidden = !visible;
       if (visible) count++;

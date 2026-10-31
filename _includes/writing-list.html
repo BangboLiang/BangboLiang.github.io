@@ -3,7 +3,7 @@
   <article class="writing-row" data-entry data-tags="{{ post.tags | join: ' ' | downcase | escape }}" data-search="{{ post.title | append: ' ' | append: post.subtitle | append: ' ' | append: post.tags | downcase | escape }}">
     <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %d, %Y' }}</time>
     <div class="writing-row-title"><a href="{{ post.url | relative_url }}"><h3>{{ post.title | strip_html }}</h3></a><p>{{ post.subtitle | default: 'Notes from my personal journal.' }}</p></div>
-    <span class="entry-category">{% if post.tags contains 'Publication' %}Research{% elsif post.tags contains 'Code' or post.tags contains 'Writing' %}Technical{% elsif post.tags contains 'Life' %}Life{% else %}Journal{% endif %}</span><a class="entry-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">↗</a>
+    <span class="entry-category">{% if post.tags contains 'Publication' or post.tags contains 'Research' %}Research{% elsif post.tags contains 'Code' or post.tags contains 'Writing' %}Technical{% elsif post.tags contains 'Life' %}Life{% else %}Journal{% endif %}</span><a class="entry-arrow" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">↗</a>
   </article>
   {% endfor %}
 </div>

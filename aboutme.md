@@ -15,7 +15,10 @@ I work on **high-performance networks and optical networks**, with a focus on pr
 - **Communication performance:** exploring protocol stacks, collective communication, and the details that shape system performance.
 - **Tools for research:** building practical tools such as [RDMA-perftest](https://github.com/BangboLiang/RDMA-perftest), a lightweight RDMA performance testing tool.
 
-## Selected publication
+## Selected research and publications
+
+**[LACE: Breaking the Duplex Barrier]({{ '/research/lace/' | relative_url }})** · 2026 · arXiv preprint<br>
+*Breaking the Duplex Barrier: Lane-Granularity OCS Scheduling for LLM Training.* Our work independently schedules TX/RX optical lanes for LLM training. [Read the paper](https://arxiv.org/abs/2609.14253).
 
 [Full-Stack Technology White Paper on Optical-Electrical Hybrid Switching Networks for Intelligent Computing Centers](https://gitee.com/bangboliang/opti-net-lab/raw/master/whitepaper.pdf) · 2025
 

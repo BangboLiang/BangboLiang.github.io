@@ -4,18 +4,37 @@ layout: personal
 {% if paginator.page > 1 %}
 <section class="shell section archive"><p class="eyebrow">THE JOURNAL · PAGE {{ paginator.page }}</p><h1 class="page-title">More from the archive.</h1>{% assign entries = paginator.posts %}{% include writing-list.html entries=entries %}<nav class="pager" aria-label="Archive pages">{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">← Newer posts</a>{% endif %}{% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older posts →</a>{% endif %}</nav></section>
 {% else %}
+{% assign lace = site.posts | where: "research_key", "lace" | first %}
 <section class="shell hero" aria-labelledby="hero-title">
   <div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PHD STUDENT · HUNAN UNIVERSITY</p>
     <h1 id="hero-title">Hi, I'm<br><span>Bangbo Liang.</span><span class="hero-chinese" lang="zh">梁帮博</span></h1>
     <p class="hero-intro">Exploring the systems<br>that <em>connect us.</em></p>
-    <p class="hero-description">I study high-performance networks and computer architecture. Here, I share my research, things I build, and moments along the way.</p>
+    <p class="hero-description">I study high-performance networks and computer architecture, with a focus on optical interconnects for distributed AI training. Here, I share my research, things I build, and moments along the way.</p>
     <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/aboutme/' | relative_url }}">A little about me <span aria-hidden="true">→</span></a></div>
+    <a class="hero-latest" href="{{ lace.url | relative_url }}"><span>NEW RESEARCH</span> Meet LACE: lane-level optical scheduling <span aria-hidden="true">↗</span></a>
   </div>
   <figure class="portrait"><div class="portrait-backdrop" aria-hidden="true"></div><img src="{{ '/assets/img/my_avatar.jpg' | relative_url }}" alt="Bangbo Liang working with a laptop in a server room" width="803" height="797" fetchpriority="high"><figcaption><span class="portrait-caption">RESEARCHER &amp; CURIOUS HUMAN</span><span class="portrait-location">Based in Changsha, China <span aria-hidden="true">↗</span></span></figcaption><span class="portrait-note" aria-hidden="true">Always curious.</span></figure>
 </section>
 <div class="shell interests-strip"><span class="strip-label">CURRENTLY THINKING ABOUT</span><div><span>Optical networks</span><i aria-hidden="true">✳</i><span>High-performance systems</span><i aria-hidden="true">✳</i><span>Hardware–software co-design</span></div></div>
 <section class="shell section" id="research" aria-labelledby="research-title">
   <div class="section-heading"><div><p class="eyebrow">01 / RESEARCH &amp; PROJECTS</p><h2 id="research-title">Making connections.<br><em>Building understanding.</em></h2></div><p class="section-intro">From optical switching to collective communication, I'm interested in how we make data center networks work better.</p></div>
+  <article class="lace-feature" aria-labelledby="lace-title">
+    <div class="lace-feature-top"><span class="eyebrow">LATEST RESEARCH</span><span class="lace-publication">ARXIV PREPRINT · 2026</span></div>
+    <div class="lace-feature-body">
+      <div class="lace-feature-copy">
+        <h3 id="lace-title"><a href="{{ lace.url | relative_url }}">LACE<span>Breaking the duplex barrier.</span></a></h3>
+        <p>Optical paths are directional. Our new work schedules transmit and receive lanes independently to match the communication demands of LLM training.</p>
+        <div class="lace-feature-links"><a class="button button-primary" href="{{ lace.url | relative_url }}">Read the research story <span aria-hidden="true">↗</span></a><a class="text-link" href="https://arxiv.org/abs/2609.14253">Read the paper <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <figure class="lace-feature-figure"><a href="{{ lace.url | relative_url }}#three-server-hardware-testbed"><img src="{{ '/assets/img/lace/testbed-results.png' | relative_url }}" alt="LACE reduces replay time from 28.03 to 15.60 seconds and GPT-2 epoch time from 3.61 to 2.84 hours in the fixed-topology testbed." width="979" height="425" loading="lazy"></a><figcaption>Fixed-topology testbed · Original paper, Figure 5</figcaption></figure>
+    </div>
+    <dl class="lace-results">
+      <div><dt>1.21–2.04×</dt><dd>Simulated communication speedup<br>LLaMA-3.1 70B &amp; 405B · 16 × 400G ports/server</dd></div>
+      <div><dt>1.80×</dt><dd>Communication replay speedup<br>Three-server fixed-topology testbed</dd></div>
+      <div><dt>1.27×</dt><dd>GPT-2 training speedup<br>Three-server fixed-topology testbed</dd></div>
+    </dl>
+    <p class="lace-result-note">Compared with ACTINA. Simulation and hardware experiments are separate evaluations.</p>
+  </article>
   <div class="research-grid">
     <article class="research-card featured"><div class="card-top"><span class="pill">PUBLICATION</span><span class="card-year">2025</span></div><div class="network-art" aria-hidden="true"><svg viewBox="0 0 500 135" fill="none"><path d="M25 90H125L200 30H300L375 90H475M25 30H125L200 90H300L375 30H475M25 60H475"/><path d="M125 30V90M200 30V90M300 30V90M375 30V90"/><g><circle cx="25" cy="30" r="5"/><circle cx="25" cy="60" r="5"/><circle cx="25" cy="90" r="5"/><circle cx="125" cy="30" r="5"/><circle cx="125" cy="90" r="5"/><circle cx="200" cy="30" r="5"/><circle cx="200" cy="90" r="5"/><circle cx="300" cy="30" r="5"/><circle cx="300" cy="90" r="5"/><circle cx="375" cy="30" r="5"/><circle cx="375" cy="90" r="5"/><circle cx="475" cy="30" r="5"/><circle cx="475" cy="60" r="5"/><circle cx="475" cy="90" r="5"/></g></svg><span>OPTICAL × ELECTRICAL</span></div><h3>Rethinking networks for<br>intelligent computing.</h3><p>Full-Stack Technology White Paper on Optical-Electrical Hybrid Switching Networks for Intelligent Computing Centers.</p><a class="card-link" href="https://gitee.com/bangboliang/opti-net-lab/raw/master/whitepaper.pdf">Read the white paper <span aria-hidden="true">↗</span></a></article>
     <article class="research-card project"><div class="card-top"><span class="pill">OPEN SOURCE</span><span class="card-year">2024</span></div><div class="terminal-art" aria-hidden="true"><span class="terminal-label"><i></i><i></i><i></i><span>RDMA-perftest</span></span><code><span>$</span> ./MyPerfv8 -t 100<br><span>→</span> Precise intervals.<br><span>→</span> A clearer view of performance.<b>_</b></code></div><h3>Small intervals.<br>Better insights.</h3><p>A lightweight RDMA performance testing tool with microsecond-level test cycles and configurable operations.</p><a class="card-link" href="https://github.com/BangboLiang/RDMA-perftest">Explore RDMA-perftest <span aria-hidden="true">↗</span></a></article>
