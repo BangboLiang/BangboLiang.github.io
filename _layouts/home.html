@@ -1,113 +1,27 @@
 ---
-layout: page
+layout: personal
 ---
-
-{{ content }}
-
-{% assign posts = paginator.posts | default: site.posts %}
-
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="posts-list list-unstyled" role="list">
-  {% for post in posts %}
-  <li class="post-preview">
-    <article>
-
-      {%- capture thumbnail -%}
-        {% if post.thumbnail-img %}
-          {{ post.thumbnail-img }}
-        {% elsif post.cover-img %}
-          {% if post.cover-img.first %}
-            {{ post.cover-img[0].first.first }}
-          {% else %}
-            {{ post.cover-img }}
-          {% endif %}
-        {% else %}
-        {% endif %}
-      {% endcapture %}
-      {% assign thumbnail=thumbnail | strip %}
-
-      {% if site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-normal">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-        </a>
-      </div>
-      {% endif %}
-      {% endif %}
-
-      <a href="{{ post.url | absolute_url }}">
-        <h2 class="post-title">{{ post.title | strip_html }}</h2>
-
-        {% if post.subtitle %}
-          <h3 class="post-subtitle">
-          {{ post.subtitle | strip_html }}
-          </h3>
-        {% endif %}
-      </a>
-
-      <p class="post-meta">
-        {% assign date_format = site.date_format | default: "%B %-d, %Y" %}
-        Posted on {{ post.date | date: date_format }}
-      </p>
-
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-small">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-        </a>
-      </div>
-      {% endif %}
-
-      {% unless site.feed_show_excerpt == false %}
-      {% if thumbnail != "" %}
-      <div class="post-image post-image-short">
-        <a href="{{ post.url | absolute_url }}" aria-label="Thumbnail">
-          <img src="{{ thumbnail | absolute_url }}" alt="Post thumbnail">
-        </a>
-      </div>
-      {% endif %}
-
-      <div class="post-entry">
-        {% assign excerpt_length = site.excerpt_length | default: 50 %}
-        {{ post.excerpt | strip_html | truncatewords: excerpt_length }}
-        {% assign excerpt_word_count = post.excerpt | number_of_words %}
-        {% if post.content != post.excerpt or excerpt_word_count > excerpt_length %}
-          <a href="{{ post.url | absolute_url }}" class="post-read-more">[Read&nbsp;More]</a>
-        {% endif %}
-      </div>
-      {% endunless %}
-
-      {% if site.feed_show_tags != false and post.tags.size > 0 %}
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          {% for tag in post.tags %}
-          <li class="list-inline-item">
-            <a href="{{ '/tags' | absolute_url }}#{{- tag -}}">{{- tag -}}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
-
-    </article>
-  </li>
-  {% endfor %}
-</ul>
-
-{% if paginator.total_pages > 1 %}
-<ul class="pagination main-pager">
-  {% if paginator.previous_page %}
-  <li class="page-item previous">
-    <a class="page-link" href="{{ paginator.previous_page_path | absolute_url }}">&larr; Newer Posts</a>
-  </li>
-  {% endif %}
-  {% if paginator.next_page %}
-  <li class="page-item next">
-    <a class="page-link" href="{{ paginator.next_page_path | absolute_url }}">Older Posts &rarr;</a>
-  </li>
-  {% endif %}
-</ul>
+{% if paginator.page > 1 %}
+<section class="shell section archive"><p class="eyebrow">THE JOURNAL · PAGE {{ paginator.page }}</p><h1 class="page-title">More from the archive.</h1>{% assign entries = paginator.posts %}{% include writing-list.html entries=entries %}<nav class="pager" aria-label="Archive pages">{% if paginator.previous_page %}<a href="{{ paginator.previous_page_path | relative_url }}">← Newer posts</a>{% endif %}{% if paginator.next_page %}<a href="{{ paginator.next_page_path | relative_url }}">Older posts →</a>{% endif %}</nav></section>
+{% else %}
+<section class="shell hero" aria-labelledby="hero-title">
+  <div class="hero-copy"><p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PHD STUDENT · HUNAN UNIVERSITY</p>
+    <h1 id="hero-title">Hi, I'm<br><span>Bangbo Liang.</span><span class="hero-chinese" lang="zh">梁帮博</span></h1>
+    <p class="hero-intro">Exploring the systems<br>that <em>connect us.</em></p>
+    <p class="hero-description">I study high-performance networks and computer architecture. Here, I share my research, things I build, and moments along the way.</p>
+    <div class="hero-actions"><a class="button button-primary" href="#research">Explore my research <span aria-hidden="true">↗</span></a><a class="text-link" href="{{ '/aboutme/' | relative_url }}">A little about me <span aria-hidden="true">→</span></a></div>
+  </div>
+  <figure class="portrait"><div class="portrait-backdrop" aria-hidden="true"></div><img src="{{ '/assets/img/my_avatar.jpg' | relative_url }}" alt="Bangbo Liang working with a laptop in a server room" width="803" height="797" fetchpriority="high"><figcaption><span class="portrait-caption">RESEARCHER &amp; CURIOUS HUMAN</span><span class="portrait-location">Based in Changsha, China <span aria-hidden="true">↗</span></span></figcaption><span class="portrait-note" aria-hidden="true">Always curious.</span></figure>
+</section>
+<div class="shell interests-strip"><span class="strip-label">CURRENTLY THINKING ABOUT</span><div><span>Optical networks</span><i aria-hidden="true">✳</i><span>High-performance systems</span><i aria-hidden="true">✳</i><span>Hardware–software co-design</span></div></div>
+<section class="shell section" id="research" aria-labelledby="research-title">
+  <div class="section-heading"><div><p class="eyebrow">01 / RESEARCH &amp; PROJECTS</p><h2 id="research-title">Making connections.<br><em>Building understanding.</em></h2></div><p class="section-intro">From optical switching to collective communication, I'm interested in how we make data center networks work better.</p></div>
+  <div class="research-grid">
+    <article class="research-card featured"><div class="card-top"><span class="pill">PUBLICATION</span><span class="card-year">2025</span></div><div class="network-art" aria-hidden="true"><svg viewBox="0 0 500 135" fill="none"><path d="M25 90H125L200 30H300L375 90H475M25 30H125L200 90H300L375 30H475M25 60H475"/><path d="M125 30V90M200 30V90M300 30V90M375 30V90"/><g><circle cx="25" cy="30" r="5"/><circle cx="25" cy="60" r="5"/><circle cx="25" cy="90" r="5"/><circle cx="125" cy="30" r="5"/><circle cx="125" cy="90" r="5"/><circle cx="200" cy="30" r="5"/><circle cx="200" cy="90" r="5"/><circle cx="300" cy="30" r="5"/><circle cx="300" cy="90" r="5"/><circle cx="375" cy="30" r="5"/><circle cx="375" cy="90" r="5"/><circle cx="475" cy="30" r="5"/><circle cx="475" cy="60" r="5"/><circle cx="475" cy="90" r="5"/></g></svg><span>OPTICAL × ELECTRICAL</span></div><h3>Rethinking networks for<br>intelligent computing.</h3><p>Full-Stack Technology White Paper on Optical-Electrical Hybrid Switching Networks for Intelligent Computing Centers.</p><a class="card-link" href="https://gitee.com/bangboliang/opti-net-lab/raw/master/whitepaper.pdf">Read the white paper <span aria-hidden="true">↗</span></a></article>
+    <article class="research-card project"><div class="card-top"><span class="pill">OPEN SOURCE</span><span class="card-year">2024</span></div><div class="terminal-art" aria-hidden="true"><span class="terminal-label"><i></i><i></i><i></i><span>RDMA-perftest</span></span><code><span>$</span> ./MyPerfv8 -t 100<br><span>→</span> Precise intervals.<br><span>→</span> A clearer view of performance.<b>_</b></code></div><h3>Small intervals.<br>Better insights.</h3><p>A lightweight RDMA performance testing tool with microsecond-level test cycles and configurable operations.</p><a class="card-link" href="https://github.com/BangboLiang/RDMA-perftest">Explore RDMA-perftest <span aria-hidden="true">↗</span></a></article>
+  </div>
+  <div class="research-topics"><div><span>01</span><h3>High-performance networks</h3><p>Data center interconnects and efficient communication.</p></div><div><span>02</span><h3>Optical networking</h3><p>Protocol stacks and collective communication optimization.</p></div><div><span>03</span><h3>Computer architecture</h3><p>Exploring the boundary between hardware and software.</p></div></div>
+</section>
+<section class="writing-section" aria-labelledby="writing-title"><div class="shell section"><div class="section-heading"><div><p class="eyebrow">02 / NOTES &amp; THOUGHTS</p><h2 id="writing-title">A work in <em>progress.</em></h2></div><a class="text-link" href="{{ '/writing/' | relative_url }}">All writing <span aria-hidden="true">↗</span></a></div><p class="writing-description">Research notes, code, and the occasional detour into life.</p>{% assign latest = site.posts | slice: 0, 4 %}{% include writing-list.html entries=latest %}</div></section>
+<section class="shell section photography-section" id="photography" aria-labelledby="photography-title"><div class="section-heading"><div><p class="eyebrow">03 / BEYOND THE SCREEN</p><h2 id="photography-title">A different kind of <em>focus.</em></h2></div>{% assign photo_post = site.posts | where: 'title', 'Some Pictures' | first %}<a class="text-link" href="{{ photo_post.url | relative_url }}">Photo journal <span aria-hidden="true">↗</span></a></div><p class="writing-description">A camera, a little wandering, and the things worth slowing down for. Shot on my Nikon D7200.</p><a class="photo-grid" href="{{ photo_post.url | relative_url }}" aria-label="See my photography journal"><figure><img src="{{ '/assets/img/07_19/pic1.jpg' | relative_url }}" alt="Sunlight filtering through willow branches beside a lake" width="1920" height="1280" loading="lazy"><figcaption>01 — Light &amp; leaves</figcaption></figure><figure><img src="{{ '/assets/img/07_19/pic6.jpg' | relative_url }}" alt="City buildings and blue sky reflected in a still lake" width="1920" height="1280" loading="lazy"><figcaption>02 — A moment of stillness</figcaption></figure><figure><img src="{{ '/assets/img/07_19/pic3.jpg' | relative_url }}" alt="Willow trees around a peaceful lake" width="1920" height="1280" loading="lazy"><figcaption>03 — The scenic route</figcaption></figure></a></section>
 {% endif %}

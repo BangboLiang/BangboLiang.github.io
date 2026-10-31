@@ -10,10 +10,12 @@
 ############################
 
 # Name of website
-title: Bangboliang's Website
+title: Bangbo Liang
 
 # Your name to show in the footer
-author: Bangboliang
+author: Bangbo Liang
+url: "https://bangboliang.github.io"
+description: "Bangbo Liang, PhD student at Hunan University researching high-performance networks, optical networking, and computer architecture."
 
 ###############################################
 # --- List of links in the navigation bar --- #
@@ -86,7 +88,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+rss-description: Research notes, code, and life along the way.
 
 ###########################
 # --- General options --- #
@@ -291,6 +293,8 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
+  - vendor/
+  - .bundle/
 
 plugins:
   - jekyll-paginate
